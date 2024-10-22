@@ -1,0 +1,58 @@
+body{
+    background-color: #f0f0f0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 50px;
+}
+
+table {
+    border: 1px solid #000;
+    border-collapse: collapse;
+    background-color: rgb(195, 195, 195);
+    
+}
+
+.table1{
+    background-color: rgb(214, 223, 248);
+    color: rgb(47, 47, 58) ;
+}
+
+.table1 th{
+    background-color: rgb(47, 47, 58);
+    color: white;
+    font-size: 20px;
+    
+}
+
+.filas{
+    background-color: rgb(214, 223, 248);
+    color: rgb(47, 47, 58) ;
+}
+
+table td, table th {
+    border: 1px solid #000;
+    padding: 8px;
+    border-bottom: 5px solid #000;
+    border-top:  5px solid #000;
+    border-left:  2px solid #000;
+    border-right:  2px solid #000;
+    border-color: rgb(0, 0, 0);
+}
+
+
+table th {
+    color: white;
+    background-color: grey;
+}
+
+
+
+div{
+    background-color: rgb(214, 223, 248);
+    color: rgb(47, 47, 58) ;
+    padding: 10px;
+    display:flex;
+    justify-content: space-around;     
+    
+}
+
