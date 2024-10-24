@@ -1,0 +1,32 @@
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+    margin-top: 50px;
+}
+
+p{
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 40%;
+}
+
+table, th, td , th{ 
+    margin-top: 50px;
+   
+    border: 1px solid black;
+    align-items: center;
+}
