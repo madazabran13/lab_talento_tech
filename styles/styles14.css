@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+   /* position: fixed;  para fijar punto 3*/
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+nav ul {
+   list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5em 1em;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+#nav-toggle {/*Este botón, visible en dispositivos móviles cuando la navbar 
+        está colapsada, permite desplegar el menú de navegación. Se activa utilizando 
+        la clase*/
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+main {
+    margin-top: 4em;
+    padding: 2em;
+}
+
+section {
+    padding: 2em 0;
+}
+/* Responsive Design */
+@media (max-width: 768px) {/*La regla-at CSS @media asocia un grupo de declaraciones 
+anidadas, en un bloque CSS delimitado por llaves
+ */   nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+
+    nav ul li a {
+        padding: 1em;
+        text-align: center;
+    }
+
+    #nav-toggle {/*Este botón, visible en dispositivos móviles cuando la navbar 
+        está colapsada, permite desplegar el menú de navegación. Se activa utilizando 
+        la clase*/
+        display: block;
+    }
+
+    .nav-open ul {
+        display: flex;
+    }
+}
+#home{
+height: 100vh;
+background-color: #f4f4f4;
+}
+#about{
+height: 100vh;
+background-color: #f4f4f4;
+}
+#services{
+height: 100vh;
+background-color: #f4f4f4;
+}
+#contact{
+height: 100vh;
+background-color: #f4f4f4;
+}
