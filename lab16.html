@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="styles/style16.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#registro">Registro</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Registro de Usuario</h1>
+        <form id="formRegistro" class="formulario" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <label for="contraseña">Contraseña:</label>
+            <input type="password" id="contraseña" name="contraseña" required>
+
+            <label for="imagenPerfil">Imagen de Perfil:</label>
+            <input type="file" id="imagenPerfil" name="imagenPerfil" accept=".jpg,.jpeg,.png" onchange="mostrarImagen(event)">
+
+            <img id="ver-imagen" src="" alt="Vista previa de la imagen" style="display:none; margin-top: 10px; border-radius: 8px;">
+
+            <button type="submit">Registrar</button>
+        </form>
+    </main>
+
+    <script src="js/script16.js"></script>
+</body>
+</html>
